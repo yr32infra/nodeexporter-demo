@@ -1,0 +1,19 @@
+name: lint shellcheck
+
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/lint-shellcheck.yml'
+      - '*.sh'
+
+jobs:
+  lint-shellcheck:
+    runs-on: ubuntu-20.04
+
+    steps:
+       - uses: actions/checkout@v3.0.2
+
+       - uses: reviewdog/action-shellcheck@v1.15.0
+         with:
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           reporter: github-pr-check
