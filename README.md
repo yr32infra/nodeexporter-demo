@@ -3,6 +3,8 @@
 I created this environment for my friend.
 
 ## Additional note
+Easy way to run it.
+
 ### Run it
 
 ```
