@@ -21,7 +21,7 @@ services:
       - '--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)'
 
   prometheus:
-    image: prom/prometheus:v2.40.0
+    image: prom/prometheus:v2.40.1
     container_name: demo__prometheus
     hostname: prometheus
     restart: unless-stopped
