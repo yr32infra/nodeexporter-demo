@@ -36,7 +36,7 @@ services:
       - '--web.enable-lifecycle'
 
   grafana:
-    image: grafana/grafana:12.1.1
+    image: grafana/grafana:12.1.2
     container_name: demo__grafana
     restart: unless-stopped
     hostname: grafana
