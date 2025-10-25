@@ -6,7 +6,7 @@ volumes:
 
 services:
   nodeexporter:
-    image: prom/node-exporter:v1.9.1
+    image: prom/node-exporter:v1.10.2
     container_name: demo__nodeexporter
     hostname: nodeexporter
     restart: unless-stopped
